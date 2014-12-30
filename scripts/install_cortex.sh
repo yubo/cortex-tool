@@ -3,7 +3,7 @@
 CORTEX_OUPTUT_DIR=/var/log/cortex
 HANDLER="|/usr/local/bin/cortex_wrapper.sh $CORTEX_OUPTUT_DIR/report_%e_%p.log"
 
-[ -f /etc/default/cortex.conf ] && source /etc/default/cortex.conf
+[ -f /etc/default/cortex.conf ] && . /etc/default/cortex.conf
 
 case $1 in
 	"start")
